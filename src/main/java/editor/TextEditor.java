@@ -34,8 +34,7 @@ public class TextEditor extends JFrame {
         centerPanel.setLayout(new BorderLayout());
         centerPanel.add(scroll, BorderLayout.CENTER);
         centerPanel.setVisible(true);
-        textArea.setName("TextArea");
-        scroll.setName("ScrollPane");
+        centerPanel.setBackground(new Color(135, 212, 185));
         centerPanel.setBorder(BorderFactory.createEmptyBorder(10, 20, 20, 20));
         add(centerPanel, BorderLayout.CENTER);
     }
@@ -162,6 +161,8 @@ public class TextEditor extends JFrame {
 
         JPanel topPanel = new JPanel();
         topPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
+        regularOrNot.setBackground(new Color(135, 212, 185));
+        topPanel.setBackground(new Color(135, 212, 185));
         textField.setPreferredSize(new Dimension(300,30));
 
         TopPanelButton save = new TopPanelButton("src/main/resources/saveIcon.png",
